@@ -115,25 +115,30 @@ body {
 /*---------------- HEADER STYLES ---------------------*/
 
 header {
-    
+    padding: 15px 0;
 }
 header .content-wrapper {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 100%;
+    margin: 0;
 }
 .header-divider {
-    
+    width: 100%;
 }
 header nav {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
     
 }
 header nav ul {
     justify-content: center;
     align-items: center;
+    width: 44%;
+    padding: 20px 0;
 }
 header nav ul li {
     
@@ -146,8 +151,15 @@ header nav ul li a {
 footer {
     
 }
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+}
 .footer-content {
     
+}
+footer p {
+    margin: 0;
 }
 .contact {
     
@@ -193,7 +205,7 @@ aside {
     
 }
 .form {
-    
+    width: 86%;
 }
 .features {
     display: flex;
@@ -201,13 +213,19 @@ aside {
     align-items: center;
     flex-flow: row wrap;
 }
-.feature-items {
+.features article {
+    width: 55%;
+}
+.features-items {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
 }
-.feature-items-description {
+.features-items-description {
     
+}
+.features p {
+    margin: 0;
 }
 .fontawesome-icon {
     
@@ -216,6 +234,9 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+}
+.reviews h3 {
+    width: 46%;
 }
 .content-reviews {
     
