@@ -133,10 +133,10 @@ p {
     font-size: .875em;
 }
 img {
-    
+    width: 100%;
 }
 figure {
-    
+    margin: 0;
 }
 address {
     font-style: normal;
@@ -195,7 +195,13 @@ header nav ul li {
 header nav ul li a {
     
 }
-
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 /*-------------------- FOOTER STYLES ------------------------*/
 footer {
     flex-direction: column;
@@ -239,6 +245,8 @@ footer .copyright {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background: url(../img/jake-melara-30679-unsplash.jpg) center no-repeat #333;
+    background-size: cover;
 }
 .hero-img {
     
@@ -286,6 +294,7 @@ input[type=button] {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background: url("../img/rawpixel-800820-unsplash1.jpg");
 }
 features h2 {
     margin-bottom: 60px;
@@ -327,8 +336,12 @@ features h2 {
     width: 55%;
     margin: 20px 0;
 }
-.content-reviews {
-    
+.reviews figure {
+    width: 90%;
+    margin: 0 auto;
+}
+.content-reviews{
+
 }
 
 
