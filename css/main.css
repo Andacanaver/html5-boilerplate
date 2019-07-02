@@ -395,6 +395,7 @@ features h2 {
 .content-section .content-wrapper {
     margin: 30px;
 }
+
 .contact-section .contact-content {
     width: 70%;
 }
@@ -760,9 +761,12 @@ features h2 {
     ABOUT PAGE
     =========================================================================
     */
-    .mission h2, .contact-section .content-wrapper h2 {
+    .mission h1, .contact-section .content-wrapper h1 {
         width: 100%;
         font-size: 3em;
+    }
+    .contact-section h2 {
+        font-size: 1.875em;
     }
     .contact-section .content-wrapper h2 {
         margin-bottom: 40px;
@@ -773,7 +777,11 @@ features h2 {
     .map figure {
         padding-bottom: 38%;
     }
-    
+    .contact-section .contact-info {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
     /* =====================================================================
         FAQ PAGE
     ========================================================================
