@@ -176,7 +176,8 @@ header .content-wrapper {
 }
 header nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
+    flex-flow: row wrap;
     width: 60%;
     font-size: 1.125em;
     font-weight: 700;
@@ -184,11 +185,13 @@ header nav {
 }
 header nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     width: 30%;
 }
 header nav ul li {
     font-size: 1.125em;
+    padding: 0 30px
 }
 
 header figure {
@@ -699,6 +702,9 @@ features h2 {
     footer .copyright {
         width: 100%;
     }
+    footer .social-icons p {
+        margin: 0 15px;
+    }
 }
 
 /*
@@ -723,7 +729,15 @@ features h2 {
         font-size: 1.125em;
         line-height: 1.333;
     }
-    
+    footer .social-icons {
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+    footer .social-icons p {
+        margin: 0 20px;
+    }
     /* Hero */
     .hero-area h1 {
         width: 60%;
