@@ -231,12 +231,17 @@ footer .social-icons {
 }
 footer .copyright {
     margin-right: 20px 0;
+    padding-bottom: 20px;
 }
-.social-icons i {
-    font-size: 1em;
-    color: #e2e3ed;
-    border-color: #527158;
-    border-radius: 40;
+
+footer .social-icons p {
+    background-color: #527158;
+    border-right: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*----------------- MOBILE STYLES HOMEPAGE ------------------*/
@@ -333,12 +338,13 @@ features h2 {
     flex-flow: row wrap;
     background-color: #2a423a;
 }
+
 .reviews h2 {
     margin-bottom: 40px;
     line-height: 1;
 }
 .reviews h3 {
-    width: 55%;
+    width: 50%;
     margin: 20px 0;
 }
 .reviews figure {
@@ -386,11 +392,11 @@ features h2 {
 .contact-content p {
     margin: 0;
 }
-.general-info {
-    
+.content-section .content-wrapper {
+    margin: 30px;
 }
-.chat {
-    
+.contact-section .contact-content {
+    width: 70%;
 }
 
 /*-------------------- FAQ PAGE -------------------*/
@@ -563,7 +569,9 @@ features h2 {
         line-height: 1;
         margin: 0;
     }
-    
+    .hero-area {
+        height: 400px;
+    }
     /* Aside */
     aside .content-wrapper {
         margin: 50px 0;
@@ -710,7 +718,9 @@ features h2 {
         width: 60%;
         font-size: 3.75em;
     }
-
+    .hero-area {
+        height: 700px;
+    }
     /* Aside */
     aside .content-wrapper {
         justify-content: space-around;
@@ -727,10 +737,23 @@ features h2 {
     }
     .features article {
         flex-basis: 33%;
+        flex-direction: column;
+    }
+    .features i {
+        font-size: 4.5em;
+        margin-bottom: 20px;
     }
     /* Reviews */
-    .reviews article div {
+    .content-reviews {
+        
+    }
+    .reviews div article {
         width: 42%;
+        flex-flow: row wrap;
+    }
+    
+    .reviews figure {
+        width: 40%;    
     }
     
     /* =====================================================================
@@ -750,6 +773,7 @@ features h2 {
     .map figure {
         padding-bottom: 38%;
     }
+    
     /* =====================================================================
         FAQ PAGE
     ========================================================================
